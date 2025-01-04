@@ -1,0 +1,18 @@
+{
+  "name": "modulefederationbasic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run:app1": "pushd app-1 && npx webpack serve && popd",
+    "run:app2": "pushd app-2 && npx webpack serve && popd",
+    "dev": "run-p run:app1 run:app2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
